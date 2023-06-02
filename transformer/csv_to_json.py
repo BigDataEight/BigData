@@ -109,7 +109,6 @@ def convert_csv_to_json(csv_filepath, json_filepath, chunk_size=10000):
                 json_data = []
                 print(now)
                 now += 10000
-                break;
         
         
         # 마지막에 남은 데이터를 JSON 파일로 저장
@@ -120,7 +119,7 @@ def convert_csv_to_json(csv_filepath, json_filepath, chunk_size=10000):
 csv_filepath = 'python_bigdata\\BigData\\imu.csv'
 
 # JSON 파일 경로
-json_filepath = 'python_bigdata\\BigData\\imu6.json'
+json_filepath = 'python_bigdata\\BigData\\imu.json'
 
 # CSV 파일을 JSON으로 변환
 convert_csv_to_json(csv_filepath, json_filepath)
